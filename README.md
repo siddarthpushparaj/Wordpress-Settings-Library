@@ -124,7 +124,7 @@ Builder objects utilize the container objects and the Wordpress api to register 
 ####Section Factory
 This is used when creating sections that will be appended to an existing admin page. You will still create a page container but the slug value should be provided.
 ```php
-<?php
+<?php namespace PaintCloud\WP\Settings;
 $page = new Page('My Settings', array('type' => 'settings', 'slug'=>'general'));
 
 $fields = array(); // Populated with field settings
@@ -138,7 +138,7 @@ new SectionFactory( $page, $settings );
 ####Option Page Builder - Single
 This is used when creating option pages that do not utilize tabs.
 ```php
-<?php
+<?php namespace PaintCloud\WP\Settings;
 $page = new Page('Theme Options');
 
 $fields = array(); // Populated with field settings
@@ -153,7 +153,7 @@ new OptionPageBuilderSingle($page, $settings);
 ####Option Page Builder - Tabbed
 This is used when creating option pages that utilize a tabbed layout.
 ```php
-<?php
+<?php namespace PaintCloud\WP\Settings;
 $page = new Page('Theme Options');
 
 $fields = array(); // Populated with field settings
@@ -162,5 +162,5 @@ $settings = array('Tab One' => array());
 
 $settings['Tab One']['Section One'] = array( 'info' => 'Section one information.', 'fields' => $fields );
 
-new OptionPageBuilderSingle($page, $settings);
+new OptionPageBuilderTabbed($page, $settings);
 ```
