@@ -12,6 +12,8 @@ A library to easily create Wordpress settings fields, sections and pages in both
 
 #Documentation
 
+View video walk through at: [Using Wordpress Settings Library](http://bit.ly/HKra8L)
+
 ##Installation
 
 Download or clone this repository `https://github.com/dobbyloo/Wordpress-Settings-Library.git`
