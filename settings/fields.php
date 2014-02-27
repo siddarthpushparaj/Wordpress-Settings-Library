@@ -113,7 +113,7 @@ class Field {
 			$clean = sanitize_text_field($dirty);
 		}
 	
-		return apply_filters( array($this, 'sanitize'), $clean, $dirty ); 
+		return $clean;
 	}	
 }
 
@@ -205,7 +205,7 @@ class TextArea extends Field {
 			$clean = wp_kses_post($dirty);
 		}
 	
-		return apply_filters( array($this, 'sanitize'), $clean, $dirty ); 
+		return $clean;
 	}	
 }
 
@@ -263,7 +263,7 @@ class Checkbox extends Field {
 			
 		}
 	
-		return apply_filters( array($this, 'sanitize'), $clean, $dirty ); 
+		return $clean; 
 	}	
 }
 
@@ -338,7 +338,7 @@ class EditorField extends Field {
 			$clean = wp_kses_post($dirty);
 		}
 	
-		return apply_filters( array($this, 'sanitize'), $clean, $dirty ); 
+		return $clean;
 	}	
 }
 
