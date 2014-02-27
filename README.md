@@ -3,7 +3,7 @@ Wordpress Settings Library
 
 A library to easily create Wordpress settings fields, sections and pages in both themes and plugins.
 
-###Version 1.0.0
+###Version 1.0.1
 
 ###Requirements
 
